@@ -1,0 +1,224 @@
+1.  create simple document to create document the contains two sections.
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                       \documentclass[12pt,a4paper]{article}
+\usepackage{fancyhdr}
+\usepackage{lipsum} 
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyhead[C]{GLOBAL ACADEMY OF TECHNOLOGY} 
+\fancyfoot[L]{GAT} 
+\fancyfoot[R]{\thepage}       
+\begin{document}
+\section{About GAT}
+Global Academy of Technology (GAT) is a premier autonomous engineering and management college in Rajarajeshwari Nagar, Bengaluru, established in 2001.
+\section{Types of courses}
+The Global Academy of Technology (GAT) in Bangalore offers undergraduate (B.E./B.Tech) in engineering, postgraduate (M.Tech, MBA), and research programs.
+\end{document}
+
+
+--------------------------------------------------------------------------------------------------
+
+
+2. create a document that displays the sample abstract/summary.
+
+
+\documentclass[12pt,a4paper]{article}
+\begin{document}
+\title{Breaking news in Karnataka}
+\author{ In the Lok Sabha}
+\date{\today}
+\maketitle
+\begin{abstract}
+Today breaking news in Karnataka gone viral and curious among Karnataka people!
+\end{abstract}
+\section{Summary}
+Significant political developments in the Lok Sabha, legal proceedings in Bengaluru, and major updates regarding international travel and state finances. 
+\end{document}
+
+
+
+---------------------------------------------------------------------------------------------------
+
+3. create a simple title page of the VTU project report.
+
+
+\documentclass[12pt,a4paper]{report}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{geometry}
+\geometry{margin=1in}
+\begin{document}
+\begin{titlepage}
+\begin{center}
+\textbf{\Large VISVESVARAYA TECHNOLOGICAL UNIVERSITY}\\
+\vspace{0.3cm}
+\textbf{\large BELAGAVI – 590018}\\
+\vspace{1cm}
+\includegraphics[width=5cm]{vtu.jpg}\\
+\vspace{1cm}
+\textbf{\Large PROJECT REPORT}\\
+\vspace{0.5cm}
+\textbf{ON}\\
+\vspace{0.3cm}
+\textbf{\LARGE ``LATEX PROJECT''}\\
+\vspace{1cm}
+\textbf{Submitted in partial fulfillment of the requirements for the award of the degree of}\\
+\vspace{0.3cm}
+\textbf{\Large BACHELOR OF ENGINEERING}\\
+\vspace{0.3cm}
+\textbf{IN}\\
+\vspace{0.3cm}
+\textbf{\Large COMPUTER SCIENCE AND ENGINEERING}
+\includegraphics[width=2cm]{clglogo.png}\\
+\textbf{Submitted by}\\
+\vspace{0.3cm}
+\begin{tabular}{c}
+\textbf{Vijayendra Tejas M} \\
+\textbf{USN: 1GA25CS433}
+\end{tabular}
+\vspace{1cm}\\
+\textbf{Under the guidance of}\\
+\vspace{0.3cm}
+\textbf{Prof.Asha Latha}\\
+\textbf{Asst.Prof}
+\vfill
+\textbf{Department of Computer Science and Engineering}\\
+\textbf{Global Academy of Technology}\\
+\textbf{Academic Year 2025–2026}
+\end{center}
+\end{titlepage}
+\end{document}
+--------------------------------------------------------------------------------------------------
+
+
+4. create a certificate.
+
+
+\documentclass[12pt,a4paper]{report}
+
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\begin{document}
+
+\begin{center}
+\textbf{\Large CERTIFICATE}
+\end{center}
+
+\vspace{1cm}
+
+This is to certify that the project work is entitled  
+\textbf{``\rule{8cm}{0.4pt}''}  
+is a bonafide work carried out by  
+\textbf{\rule{7cm}{0.4pt}}  
+bearing USN  
+\textbf{\rule{5cm}{0.4pt}}  
+in partial fulfillment of the requirements for the award of the degree of  
+\textbf{\rule{6cm}{0.4pt}}  
+in the Department of  
+\textbf{\rule{6cm}{0.4pt}}  
+of \textbf{\rule{6cm}{0.4pt}} during the academic year  
+\textbf{\rule{4cm}{0.4pt}}.
+
+\vspace{1.5cm}
+
+The project work has been carried out under my/our guidance and supervision.
+
+\vspace{2cm}
+
+\begin{tabular}{p{7cm} p{7cm}}
+\textbf{Guide Signature} & \textbf{Head of the Department} \\
+\rule{6cm}{0.4pt} & \rule{6cm}{0.4pt} \\
+Name: \rule{5cm}{0.4pt} & Name: \rule{5cm}{0.4pt} \\
+Designation: \rule{4cm}{0.4pt} & Designation: \rule{4cm}{0.4pt}
+\end{tabular}
+
+\vspace{2cm}
+
+\begin{tabular}{p{7cm} p{7cm}}
+\textbf{External Examiner} & \textbf{Principal} \\
+\rule{6cm}{0.4pt} & \rule{6cm}{0.4pt} \\
+Name: \rule{5cm}{0.4pt} & Name: \rule{5cm}{0.4pt}
+\end{tabular}
+
+\vspace{1cm}
+
+\noindent
+Date: \rule{4cm}{0.4pt} \hfill Place: \rule{4cm}{0.4pt}
+
+\end{document}
+
+-----------------------------------------------------------------------------------------------------------------
+
+
+5. create a document that contains the following table wiyh proper labels.
+
+
+
+\documentclass[12pt,a4paper]{article}
+\usepackage{geometry}
+\usepackage{multirow}
+\usepackage{array}
+\geometry{margin=1in}
+\begin{document}
+\begin{table}[h!]
+\centering
+\caption{Student Marks Details}
+\label{tab:student_marks}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+\multirow{2}{*}{\textbf{Sl. No}} &
+\multirow{2}{*}{\textbf{USN}} &
+\multirow{2}{*}{\textbf{Student Name}} &
+\multicolumn{3}{c|}{\textbf{Marks}} \\ \cline{4-6}
+ &  &  & \textbf{Subject1} & \textbf{Subject2} & \textbf{Subject3} \\
+\hline
+1 & 1GA25CS433 & VIJAY & 89 & 60 & 90 \\
+\hline
+2 & 1GA25CS428 & SHOBHIT & 78 & 45 & 98 \\
+\hline
+3 & 1GA25CS430 & SUJAY & 67 & 55 & 59 \\
+\hline
+4 & 1GA25CS429 & SUDEEP & 81 & 63 & 72 \\
+\hline
+\end{tabular}
+\end{table}
+\end{document}
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+6. side-by-side.
+
+
+\documentclass[12pt,a4paper]{article}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{geometry}
+\geometry{margin=1in}
+\begin{document}
+\begin{figure}[h!]
+\centering
+\begin{subfigure}{0.45\textwidth}
+\centering
+\includegraphics[width=\linewidth]{shuttergames-ojvazzsxeB8-unsplash.jpg}
+\caption{Camera Image}
+\label{fig:img1}
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.45\textwidth}
+\centering
+\includegraphics[width=\linewidth]{LION.jpg}
+\caption{Lion Image}
+\label{fig:img2}
+\end{subfigure}
+\caption{Capture the beautiful image of Lion and his cub in Sony Fx3 camera}
+\label{fig:side_by_side}
+\end{figure}
+\end{document}
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
