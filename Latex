@@ -1,4 +1,4 @@
-1.  create simple document to create document the contains two sections.
+1)  create simple document to create document the contains two sections.
 
                                                                                                                                                                                                                                                                                                                                                                                                                                        \documentclass[12pt,a4paper]{article}
 \usepackage{fancyhdr}
@@ -19,7 +19,7 @@ The Global Academy of Technology (GAT) in Bangalore offers undergraduate (B.E./B
 --------------------------------------------------------------------------------------------------
 
 
-2. create a document that displays the sample abstract/summary.
+2) create a document that displays the sample abstract/summary.
 
 
 \documentclass[12pt,a4paper]{article}
@@ -39,7 +39,7 @@ Significant political developments in the Lok Sabha, legal proceedings in Bengal
 
 ---------------------------------------------------------------------------------------------------
 
-3. create a simple title page of the VTU project report.
+3) create a simple title page of the VTU project report.
 
 
 \documentclass[12pt,a4paper]{report}
@@ -91,7 +91,7 @@ Significant political developments in the Lok Sabha, legal proceedings in Bengal
 --------------------------------------------------------------------------------------------------
 
 
-4. create a certificate.
+4)  create a certificate.
 
 
 \documentclass[12pt,a4paper]{report}
@@ -151,7 +151,7 @@ Date: \rule{4cm}{0.4pt} \hfill Place: \rule{4cm}{0.4pt}
 -----------------------------------------------------------------------------------------------------------------
 
 
-5. create a document that contains the following table wiyh proper labels.
+5) create a document that contains the following table wiyh proper labels.
 
 
 
@@ -190,7 +190,7 @@ Date: \rule{4cm}{0.4pt} \hfill Place: \rule{4cm}{0.4pt}
 --------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-6. side-by-side.
+6) side-by-side.
 
 
 \documentclass[12pt,a4paper]{article}
@@ -222,3 +222,223 @@ Date: \rule{4cm}{0.4pt} \hfill Place: \rule{4cm}{0.4pt}
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------
+7)   create a document that consists of the following two mathematical equations
+
+
+\documentclass[12pt,a4paper]{article}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\geometry{margin=1in}
+\begin{document}
+\section*{Mathematical Equations}
+\subsection*{Equation 1: Quadratic Formula}
+\begin{align}
+x &= \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \\
+  &= \frac{-2 \pm \sqrt{2^2 - 4(1)(-8)}}{2 \cdot 1} \\
+  &= \frac{-2 \pm \sqrt{4 + 32}}{2}
+\end{align}
+\subsection*{Equation 2: Mathematical Expression}
+\begin{align}
+\varphi_{\sigma} A_t
+&= \sum_{\pi \in C_t} \operatorname{sgn}(\pi)\,
+\varphi_{\rho_0}^{\lambda}\varphi_{\rho_{\pi}}^{\lambda} \\
+&= \sum_{\tau \in C_{\sigma t}}
+\operatorname{sgn}(\sigma^{-1}\tau\sigma)\,
+\varphi_{\sigma}^{\lambda}\varphi_{\sigma^{-1}\tau\sigma}^{\lambda} \\
+&= A_{\sigma t}\varphi_{\sigma}^{\lambda}
+\end{align}
+\end{document}
+`
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+8)   demonstrate the presentation of Numbered theorems, definitions, corollaries, and lemmas in the document.
+
+\documentclass[12pt,a4paper]{article}
+\usepackage{amsmath, amsthm}
+\usepackage{geometry}
+\geometry{margin=1in}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\begin{document}
+\section*{Demonstration of Theorem Environments}
+\begin{definition}
+A prime number is a natural number greater than 1 that has no positive divisors other than 1 and itself.
+\end{definition}
+\begin{theorem}
+There are infinitely many prime numbers.
+\end{theorem}
+\begin{lemma}
+If a prime number divides the product of two integers, then it divides at least one of the integers.
+\end{lemma}
+\begin{corollary}
+There are infinitely many prime numbers of the form $6n \pm 1$, where $n$ is a natural number.
+\end{corollary}
+\begin{definition}
+A prime number is a natural number greater than 1 that has no positive divisors other than 1 and itself.
+\end{definition}
+\begin{theorem}
+There are infinitely many prime numbers.
+\end{theorem}
+\begin{lemma}
+If a prime number divides the product of two integers, then it divides at least one of the integers.
+\end{lemma}
+\begin{corollary}
+There are infinitely many prime numbers of the form $6n \pm 1$, where $n$ is a natural number.
+\end{corollary}
+\end{document}
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+9) create a document that consists of two paragraphs with a minimum of 10 citations in it and display the reference in the section
+
+
+\documentclass[12pt]{article}
+
+\usepackage{cite}
+
+\begin{document}
+
+\title{Sample Document with Citations}
+\author{Vijayendra Tejas.M}
+\date{\today}
+\maketitle
+
+\section*{Introduction}
+
+Technology has significantly influenced modern society, shaping communication, education, and business practices . The rapid growth of the internet and digital tools has made information more accessible than ever before .
+\section*{Discussion}
+
+Education systems are also evolving due to digital transformation, enabling online learning and global collaboration . However, challenges such as data privacy and cybersecurity remain critical concerns.
+
+\section*{References}
+
+\begin{thebibliography}{10}
+
+\bibitem{ref1} Sudeep, \textit{Latex}, 2020.
+\bibitem{ref2} Sujay, ``Research on Technology,'' 2019.
+\bibitem{ref3} Vinay, \textit{Digital Revolution},  2018.
+\bibitem{ref4} Hemanth, ``Internet Growth Study,'' 2021.
+\bibitem{ref5} Tejas, \textit{Innovation and Economy}, 2017.
+\bibitem{ref6} Vijay, ``AI Development,''  2022.
+\bibitem{ref7} Shobith, \textit{Online Education}, 2020.
+\bibitem{ref8} Shiva, ``Cybersecurity Issues,'' 2021.
+\bibitem{ref9} Shankar, \textit{Data Protection Laws}, 2019.
+\bibitem{ref10} Surya, ``Future Technology,'' 2023.
+
+\end{thebibliography}
+
+\end{document}
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+10)  to design a simple tree diagram or hierarchical structure in the document with appropriate labels using the Tikz library.
+
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{trees}
+\begin{document}
+\section*{Tree Diagram Using TikZ}
+\begin{center}
+\begin{tikzpicture}[
+  level 1/.style={sibling distance=6cm},
+  level 2/.style={sibling distance=3cm},
+  level distance=2.5cm,
+  every node/.style={
+    draw,
+    rectangle,
+    rounded corners,
+    align=center,
+  },
+  edge from parent/.style={draw, -latex}
+]
+\node {GAT}
+  child { node {MBA}
+    child { node {HR} }
+    child { node {Finance} }
+  }
+  child { node {BTech}
+    child { node {CSE} }
+    child { node {IS} }
+  };
+\end{tikzpicture}
+\end{center}
+\end{document}
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+11)  to present an algorithm in the document using algorithm/algorithmic/algorithm2e library.
+
+\documentclass{article}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\begin{document}
+\title{Linear Search Algorithm}
+\author{}
+\date{}
+\maketitle
+\section{Algorithm Example}
+\begin{algorithm}
+\caption{Linear Search}
+\begin{algorithmic}[1]
+\REQUIRE Array A of size n, Key element x
+\ENSURE Position of x if found
+\STATE Set position $\leftarrow -1$
+\FOR{$i = 1$ to $n$}
+\IF{$A[i] = x$}
+\STATE position $\leftarrow i$
+\STATE \textbf{break}
+\ENDIF
+\ENDFOR
+\IF{position $\neq -1$}
+\STATE Print ``Element found at position'', position
+\ELSE
+\STATE Print ``Element not found''
+\ENDIF
+\end{algorithmic}
+\end{algorithm}
+\end{document}
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+12)  to create a simple report and article by using suitable commands and formats of user choice.
+
+
+\documentclass{article}
+\usepackage[a4paper,margin=1in]{geometry}
+\title{Simple Article Example}
+\author{Student Name}
+\date{\today}
+\begin{document}
+\maketitle
+\begin{abstract}
+This is a simple article document created using LaTeX. 
+It demonstrates sections, subsections, and basic formatting.
+\end{abstract}
+\section{Introduction}
+LaTeX is widely used for preparing academic documents. 
+It provides professional formatting for articles and research papers.
+\section{Main Content}
+\subsection{Advantages of LaTeX}
+LaTeX automatically handles numbering, references, 
+and formatting of mathematical equations.
+\subsection{Applications}
+LaTeX is used in research papers, reports, books, and theses.
+\section{Conclusion}
+This is a simple example of an article format in LaTeX.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+\end{document}
+
+---x-------------------------------x-------------------------------------END--------------------------------------x---
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
